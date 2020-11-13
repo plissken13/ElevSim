@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\ElevSim\\ElevSim\\ElevSim\\ElevSim.csproj",
+      "projectUniqueName": "D:\\Development\\ElevSim\\ElevSim\\ElevSim.csproj",
       "projectName": "ElevSim",
-      "projectPath": "D:\\Development\\ElevSim\\ElevSim\\ElevSim\\ElevSim.csproj",
+      "projectPath": "D:\\Development\\ElevSim\\ElevSim\\ElevSim.csproj",
       "packagesPath": "C:\\Users\\Alisa\\.nuget\\packages\\",
-      "outputPath": "D:\\Development\\ElevSim\\ElevSim\\ElevSim\\obj\\",
+      "outputPath": "D:\\Development\\ElevSim\\ElevSim\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
