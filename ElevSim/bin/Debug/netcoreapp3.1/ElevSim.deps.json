@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ElevSim/1.0.0": {
+        "dependencies": {
+          "Presentation": "1.0.0"
+        },
+        "runtime": {
+          "ElevSim.dll": {}
+        },
+        "resources": {
+          "ru/ElevSim.resources.dll": {
+            "locale": "ru"
+          }
+        }
+      },
+      "Presentation/1.0.0": {
+        "runtime": {
+          "Presentation.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ElevSim/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Presentation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,9 @@
+D:\Development\ElevSim\Presentation\bin\Debug\netcoreapp3.1\Presentation.deps.json
+D:\Development\ElevSim\Presentation\bin\Debug\netcoreapp3.1\Presentation.dll
+D:\Development\ElevSim\Presentation\bin\Debug\netcoreapp3.1\Presentation.pdb
+D:\Development\ElevSim\Presentation\obj\Debug\netcoreapp3.1\Presentation.csprojAssemblyReference.cache
+D:\Development\ElevSim\Presentation\obj\Debug\netcoreapp3.1\Presentation.AssemblyInfoInputs.cache
+D:\Development\ElevSim\Presentation\obj\Debug\netcoreapp3.1\Presentation.AssemblyInfo.cs
+D:\Development\ElevSim\Presentation\obj\Debug\netcoreapp3.1\Presentation.csproj.CoreCompileInputs.cache
+D:\Development\ElevSim\Presentation\obj\Debug\netcoreapp3.1\Presentation.dll
+D:\Development\ElevSim\Presentation\obj\Debug\netcoreapp3.1\Presentation.pdb

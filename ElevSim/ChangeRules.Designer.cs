@@ -149,7 +149,7 @@
             this.label5.Size = new System.Drawing.Size(123, 25);
             this.label5.TabIndex = 10;
             this.label5.Text = "Лист событий";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+           //this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // richTextBox3
             // 
