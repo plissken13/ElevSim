@@ -11,11 +11,11 @@ namespace ElevSim
 {
     public partial class AddWorker : Form, IAddWorker
     {
-        public string WorkerName => textBox1.Text;
+        public string WorkerName => textBox3.Text;
 
-        public int StartFloor => int.Parse(textBox2.Text);
+        public int StartFloor => int.Parse(textBox1.Text);
 
-        public int EndFloor => int.Parse(textBox3.Text);
+        public int EndFloor => int.Parse(textBox2.Text);
 
         List<string> names = new List<string>
         {
@@ -44,16 +44,16 @@ namespace ElevSim
         {
             StartForm startForm = new StartForm();
             this.Close();
-            //AddW?.Invoke();
+            AddW?.Invoke();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Random rand = new Random();
             int num = rand.Next(1, names.Count);
-            textBox1.Text = names[num];
+            textBox3.Text = names[num];
+            textBox1.Text = rand.Next(1, 10).ToString();
             textBox2.Text = rand.Next(1, 10).ToString();
-            textBox3.Text = rand.Next(1, 10).ToString();
         }
 
         public void ShowError(string message)
