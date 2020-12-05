@@ -7,11 +7,10 @@ namespace Presentation
     public interface IAddWorker : IView
     {
         string WorkerName { get; }
-        string StartFloor { get; }
-        string EndFloor { get; }
+        int StartFloor { get; }
+        int EndFloor { get; }
 
         event Action AddW;
-
         void ShowError(string message);
     }
 }

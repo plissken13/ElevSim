@@ -17,33 +17,24 @@ namespace Presentation
             _view.AddW += AddW;
 
             _service = service;
-            _service.EntityUpdated += HandleEntityUpdated;
-
+            
         }
 
         private void AddW()
         {
-            if (int.TryParse(_view.StartFloor, out int startFloor) && int.TryParse(_view.EndFloor, out int endFloor))
-            {
-
-             HumanStartingData _data = new HumanStartingData(_view.WorkerName, startFloor, endFloor);
-             _service.AddEntity(_data);
-            }
-
-            else
+             HumanStartingData _data = new HumanStartingData(_view.WorkerName, _view.StartFloor, _view.EndFloor);
+             bool success = _service.AddEntity(_data);
+            
+            if (success == false) 
             {
                 _view.ShowError("Invalid 'Initiative' value");
             }
         }
 
-        public event Action AddEntity;
 
-        public event Action EntityUpdated;
-
-        private void HandleEntityUpdated()
+        public void Run()
         {
-            EntityUpdated?.Invoke();
-            _view.Close();
+            _view.Show();
         }
     }
 }

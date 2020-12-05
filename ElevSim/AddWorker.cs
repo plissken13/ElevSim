@@ -13,9 +13,9 @@ namespace ElevSim
     {
         public string WorkerName => textBox1.Text;
 
-        public string StartFloor => textBox2.Text;
+        public int StartFloor => int.Parse(textBox2.Text);
 
-        public string EndFloor => textBox3.Text;
+        public int EndFloor => int.Parse(textBox3.Text);
 
         public AddWorker()
         {
@@ -24,9 +24,11 @@ namespace ElevSim
 
         public event Action AddW;
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            AddW?.Invoke();
+            StartForm startForm = new StartForm();
+            this.Close();
+            //AddW?.Invoke();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -38,5 +40,7 @@ namespace ElevSim
         {
             throw new NotImplementedException();
         }
+
+
     }
 }

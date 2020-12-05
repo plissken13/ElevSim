@@ -11,36 +11,52 @@ using Presentation;
 
 namespace ElevSim
 {
-    public partial class StartForm : Form
+    public partial class StartForm : Form, IStartForm
     {
         public StartForm()
         {
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        public event Action ShowAddWorker;
+
+    
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+            NewBuilding newBuilding = new NewBuilding();
+            newBuilding.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            AddWorker addWorker = new AddWorker();
+            addWorker.Show();
+            //ShowAddWorker?.Invoke();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            ChangeRules changeRules = new ChangeRules();
+            changeRules.Show();
         }
 
-        private void Form1_Load_1(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
-
+            Statistics statistics = new Statistics();
+            statistics.Show();
         }
+
+
+        /* public void Show()
+         {
+             throw new NotImplementedException();
+         }
+
+         public void Close()
+         {
+             throw new NotImplementedException();
+         }
+
+         */
     }
 }

@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Presentation
 {
-    interface INewBuilding
+    public interface INewBuilding
     {
+        int FloorsNumber { get; }
+        int LiftsNumber { get; }
+
+        event Action NewB;
     }
 }

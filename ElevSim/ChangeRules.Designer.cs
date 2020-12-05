@@ -149,7 +149,6 @@
             this.label5.Size = new System.Drawing.Size(123, 25);
             this.label5.TabIndex = 10;
             this.label5.Text = "Лист событий";
-           //this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // richTextBox3
             // 
@@ -292,6 +291,7 @@
             this.button6.TabIndex = 28;
             this.button6.Text = "Импорт";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label9
             // 
@@ -309,7 +309,7 @@
             this.textBox6.Size = new System.Drawing.Size(36, 31);
             this.textBox6.TabIndex = 30;
             // 
-            // Form4
+            // ChangeRules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -343,7 +343,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
-            this.Name = "Form4";
+            this.Name = "ChangeRules";
             this.Text = "Смена правил";
             this.ResumeLayout(false);
             this.PerformLayout();

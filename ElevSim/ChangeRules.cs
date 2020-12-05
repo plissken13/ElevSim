@@ -15,5 +15,10 @@ namespace ElevSim
             InitializeComponent();
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            StartForm startForm = new StartForm();
+            this.Close();
+        }
     }
 }
