@@ -17,9 +17,25 @@ namespace ElevSim
 
         public int EndFloor => int.Parse(textBox3.Text);
 
+        List<string> names = new List<string>
+        {
+            "Vlad",
+            "Ilya",
+            "Kyle",
+            "Lloyd",
+            "Oleg",
+            "Mario",
+            "Samuel",
+            "Yury",
+            "Max",
+            "Basil"
+        };
+
         public AddWorker()
         {
             InitializeComponent();
+
+       
         }
 
         public event Action AddW;
@@ -33,14 +49,17 @@ namespace ElevSim
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //////////RANDOM DATA GENERATING
+            Random rand = new Random();
+            int num = rand.Next(1, names.Count);
+            textBox1.Text = names[num];
+            textBox2.Text = rand.Next(1, 10).ToString();
+            textBox3.Text = rand.Next(1, 10).ToString();
         }
 
         public void ShowError(string message)
         {
             throw new NotImplementedException();
         }
-
 
     }
 }
