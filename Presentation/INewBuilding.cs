@@ -9,6 +9,7 @@ namespace Presentation
         int FloorsNumber { get; }
         int LiftsNumber { get; }
 
+      
         event Action NewB;
     }
 }

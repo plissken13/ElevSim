@@ -13,7 +13,12 @@ namespace ElevSim
     {
         public int FloorsNumber => int.Parse(textBox1.Text);
 
-        public int LiftsNumber => int.Parse(textBox2.Text);
+       public int LiftsNumber => int.Parse(textBox17.Text);
+        /*public int Capacity1 => int.Parse(textBox2.Text);
+       public int Capacity2 => int.Parse(textBox5.Text);
+       public int Capacity3 => int.Parse(textBox8.Text);
+       public int Capacity4 => int.Parse(textBox11.Text);
+       public int Capacity5 => int.Parse(textBox14.Text);*/
 
         public NewBuilding()
         {
@@ -26,6 +31,16 @@ namespace ElevSim
         {
             StartForm startForm = new StartForm();
             this.Close();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

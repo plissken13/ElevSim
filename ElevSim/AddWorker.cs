@@ -44,7 +44,7 @@ namespace ElevSim
         {
             StartForm startForm = new StartForm();
             this.Close();
-            AddW?.Invoke();
+            //AddW?.Invoke();
         }
 
         private void button2_Click(object sender, EventArgs e)
